@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <string.h>
+
+//int main()
+//{
+//	double a=3.1415976;
+//	double* dp=&a;
+//	printf("%lf\n",a);//lf用于double的格式
+//	*dp=100.312;
+//	printf("%lf\n",a);
+//	return 0;
+//	/*int a=10;
+//	int* p= &a;
+//	printf("%p\n",&a);
+//	*p = 20;
+//	printf("%d\n",a);
+//	return 0;*/
+//}
+//============================================
+
+struct	book
+	{
+		char name[20];
+		short price;
+	};
+
+int main()
+{
+	struct book b1={"python",66};
+	struct book* pb=&b1;
+	printf("%p\n",pb);
+	printf("书名=%s\n",b1.name);
+	printf("价格=%d\n",b1.price);
+	b1.price=89;
+	strcpy(b1.name,"你妈必死");//字符拷贝函数 string-copy
+	printf("供不应求所以价格=%d\n",b1.price);
+	printf("%s\n",(*pb).name);
+	printf("%d\n",(*pb).price);
+	printf("%s\n",pb->name);
+	printf("%d\n",pb->price);
+	return 0;
+}
