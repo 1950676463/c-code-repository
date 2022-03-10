@@ -1,0 +1,90 @@
+//包含一个stdio.h的文件
+#include <stdio.h>
+//void 是空不用返回
+//int 是整型的意思
+//main前面的int是标识main函数调用返回一个整型值
+//int main()//主函数-程序的入口main有且只有一个
+//{
+	//%c表示打印字符
+	//%d表示打印整形
+	//%f表示打印浮点型(小数)
+	//%p表示以地址的形式打印
+//	//%x表示打印十六进制
+//	char cao='C';
+//	int ni=30;
+//	float f=5.0;
+//	double b=3.1455555555;
+//	//char--表示字符类型
+//	//short int--短整型
+//	//int--整型
+//	//long--长整型
+//	//long long --更长整型
+//	//float--单精度
+//	//double--双精度
+//	printf("%c\n",cao);//%c--表示字符输出格式
+//	printf("%d\n",ni);//%d--表示整型(十进制数据)输出格式
+//	printf("%f\n",f);
+//	printf("%lf\n",b);
+//	printf("你好操你妈!\n");
+//	return 0;//返回 0
+//}
+//===============================================================================
+//int main()
+//{
+//	short a=10;
+//	int b=1;
+//	float c=3.14f;
+//	printf("%f\n",c);
+//	printf("%d\n",sizeof(char));
+//	printf("%d\n",sizeof(short));
+//	printf("%d\n",sizeof(int));
+//	printf("%d\n",sizeof(long));
+//	printf("%d\n",sizeof(long long));
+//	printf("%d\n",sizeof(float));
+//	printf("%d\n",sizeof(double));
+//	return 0;
+//}
+//==============================================================================
+
+//int global=100;//全局变量
+//int main()
+//{
+//	//局部变量比全局变量优先度高
+//	//局部变量与全局变量名字建议不相同
+//	int global=20;//局部变量
+//	printf("%d\n",global);
+//	return 0;
+//}
+//==============================================================================
+
+
+//int fly='a';
+//
+//void good()
+//{
+//	printf("你喜欢%c吗？\n",fly);
+//}
+//
+//
+//int main()
+//{
+//	//计算两个数的和
+//	int num1=0;
+//	int num2=0;
+//	int sum=0;
+//	//输入数据-使用输入函数scanf
+//	scanf("%d%d",&num1,&num2);
+//	sum=num1+num2;
+//	printf("%d + %d= %d\n",num1,num2,sum);
+//	good();
+//	return 0;
+//}
+//=======================================================
+
+
+int main()
+{
+	extern int fuck;
+	printf("今年是%d年\n",fuck);
+	return 0;
+}
